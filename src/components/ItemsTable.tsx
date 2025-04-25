@@ -19,7 +19,6 @@ const initialPaginationModel = { page: 0, pageSize: 5 }
 export const ItemsTable: React.FC = () => {
   const items = useAppSelector(selectItems)
   const [paginationModel, setPaginationModel] = useState(initialPaginationModel)
-  console.log('Items:', items)
 
   return (
     <Paper sx={{ mt: 2 }}>
